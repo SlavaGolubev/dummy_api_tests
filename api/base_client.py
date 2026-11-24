@@ -23,3 +23,9 @@ class BaseClient:
 
     def post(self, endpoint: str, **kwargs) -> requests.Response:
         return self._request("POST", endpoint, **kwargs)
+
+    def put(self, endpoint: str, **kwargs) -> requests.Response:
+        return self._request("PUT", endpoint, **kwargs)
+
+    def delete(self, endpoint: str, **kwargs) -> requests.Response:
+        return self._request("DELETE", endpoint, **kwargs)

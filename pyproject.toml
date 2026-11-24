@@ -14,4 +14,9 @@ dependencies = [
     "requests>=2.34.2",
 ]
 
+[tool.pytest.ini_options]
+markers = [
+    "smoke: критически важные тесты для быстрой проверки сборки",
+    "regression: полный набор регрессионных тестов",
+]
 

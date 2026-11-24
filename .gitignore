@@ -4,11 +4,11 @@ __pycache__/
 build/
 dist/
 .idea/
-.python-version/
+.python-version
 wheels/
 *.egg-info
 
 # Virtual environments
 .venv
 uv.lock
-
+allure-results/
