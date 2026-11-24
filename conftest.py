@@ -1,5 +1,6 @@
 import pytest
 from api.auth_api import AuthAPI
+from api.cart_api import CartAPI
 from api.products_api import ProductsApi
 
 
@@ -18,3 +19,11 @@ def auth_token(auth_api: AuthAPI) -> str:
 @pytest.fixture
 def products_api() -> ProductsApi:
     return ProductsApi()
+
+@pytest.fixture
+def cart_api() -> CartAPI:
+    return CartAPI()
+
+
+
+

@@ -3,6 +3,7 @@ import requests
 from api.base_client import BaseClient
 
 
+
 class ProductsApi(BaseClient):
     def get_products(self, limit: int | None = None, skip: int | None = None) -> requests.Response:
         raw_params = {"limit": limit, "skip": skip}
